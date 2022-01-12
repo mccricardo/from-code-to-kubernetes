@@ -1,0 +1,20 @@
+FROM golang:1.17-alpine AS builder
+
+WORKDIR /app
+
+COPY go.mod ./
+RUN go mod download
+
+COPY *.go ./
+
+RUN CGO_ENABLED=0 go build -o /server
+
+FROM scratch
+
+WORKDIR /app
+
+COPY --from=builder /server /server
+
+EXPOSE 8090
+
+CMD [ "/server" ]

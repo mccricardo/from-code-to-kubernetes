@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: webservice
+  name: webservice
+spec:
+  imagePullSecrets:
+  - name: regcred
+  containers:
+  - image: ghcr.io/mccricardo/webservice:0.1
+    name: webservice
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
