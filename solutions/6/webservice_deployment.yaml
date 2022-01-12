@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: webservice
+  name: webservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webservice
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: webservice
+    spec:
+      imagePullSecrets:
+      - name: regcred
+      containers:
+      - image: ghcr.io/mccricardo/webservice:0.1
+        name: webservice
+        resources: {}
+status: {}

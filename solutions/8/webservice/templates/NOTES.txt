@@ -1,0 +1,2 @@
+Access service by running kubectl port-forward service/{{ .Values.name }} 8090:8090.
+

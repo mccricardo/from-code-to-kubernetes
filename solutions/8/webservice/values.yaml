@@ -1,0 +1,5 @@
+name: webservice
+image: ghcr.io/mccricardo/webservice:0.1
+port: 8090
+imagePullSecrets: regcred
+replicas: 1
