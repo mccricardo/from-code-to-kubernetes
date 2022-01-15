@@ -9,5 +9,5 @@ Now that you have a functional service, you want to containerize it. Using [dock
   - [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
   - [Docker run reference](https://docs.docker.com/engine/reference/run/)
   - [Creating a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
-  - [Working with the Container registry](https://docs.docker.com/engine/reference/run/)
+  - [Working with the Container registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
   - [docker push](https://docs.docker.com/engine/reference/commandline/push/)
